@@ -1,0 +1,10 @@
+Why do we need Session Handling?
+During test execution, the Selenium WebDriver has to interact with the browser all the time 
+to execute given commands. At the time of execution, it is also possible that, before current execution completes,
+someone else starts execution of another script, in the same machine and in the same type of browser.
+
+How to achieve Session Handling in Selenium WebDriver?
+If you check the source code of Selenium WebDriver, you will find a variable named as 'sessionId'. 
+Whenever we create a new instance of a WebDriver object,
+a new 'sessionId' will be generated and attached with that particular Firefox/Chrome/IE Driver ().
+So anything we do after this will execute only in that particular Firefox browser session.
